@@ -1,2 +1,16 @@
-# prac-architecture-microfrontend-webpack-react
-this project is practice of making arcitecture that combinate react, webpack, microarchitecture.
+# 컨셉
+
+이 프로젝트는 웹팩 개발 서버 기능에서 proxy server를 시험하기 위한 테스트 앱입니다.
+백엔드와 프론트로 구성됩니다.
+
+백엔드
+localhost:5000에서 실행됩니다.
+
+프론트
+localhost:4000에서 실행됩니다.
+
+프록시
+프론트의 웹팩에서 프록시 서버를 띄워 localhost:5000 호스트와 http://echo.jsontest.com 호스트로 연결됩니다. 후자는 외부 도메인과의 연결을 시도하기 위함입니다.
+
+백엔드와 프론트를 실행 후, 버튼을 눌러서 프록시를 경유한 요청을 시험해보세요.
+프록시를 경유하는 건 정상요청이 되고, 그렇지 않은 요청은 cors가 뜰 겁니다.
